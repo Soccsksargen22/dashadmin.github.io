@@ -1,0 +1,474 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Terrain</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+
+<!-- Bootstrap Core CSS -->
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+
+<!-- Custom CSS -->
+<link href="css/style.css" rel='stylesheet' type='text/css' />
+
+<!-- font-awesome icons CSS -->
+<link href="css/font-awesome.css" rel="stylesheet"> 
+<!-- //font-awesome icons CSS -->
+
+ <!-- side nav css file -->
+ <link href='css/SidebarNav.min.css' media='all' rel='stylesheet' type='text/css'/>
+ <!-- side nav css file -->
+ 
+ <!-- js-->
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/modernizr.custom.js"></script>
+
+<!--webfonts-->
+<link href="//fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i&amp;subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet">
+<!--//webfonts--> 
+
+<!-- Metis Menu -->
+<script src="js/metisMenu.min.js"></script>
+<script src="js/custom.js"></script>
+<link href="css/custom.css" rel="stylesheet">
+<!--//Metis Menu -->
+
+</head> 
+<body class="cbp-spmenu-push">
+    <div class="main-content">
+    <div class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left" id="cbp-spmenu-s1">
+        <!--left-fixed -navigation-->
+        <aside class="sidebar-left">
+      <nav class="navbar navbar-inverse">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".collapse" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            </button>
+            <h1><a class="navbar-brand" href="dash.html"><span class=""></span> SOCCSKSARGEN <span class="dashboard_text">ESCAPADE</span></a></h1>
+          </div>
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="sidebar-menu">
+              <li class="header">DASHBOARD</li>
+               <a href="#">
+              <li class="treeview">  
+                </a>
+              </li>
+              <li class="treeview">
+                <a href="#">
+                <i class="fa fa-laptop"></i>
+                <span>Manage Account</span>
+                <i class="fa fa-angle-left pull-right"></i>
+                </a>
+                <ul class="treeview-menu">
+                  <li><a href="#"><i class="fa fa-angle-right"></i> Admin</a></li>
+                  <li><a href="player_dash.html"><i class="fa fa-angle-right" ></i> Player</a></li>
+
+                </ul>
+              </li>
+             <li class="treeview">
+              <li class="treeview">
+                <a href="#">
+                <i class="fa fa-file"></i>
+                <span>Manage Asset Data</span>
+                <i class="fa fa-angle-left pull-right"></i>
+                </a>
+                <ul class="treeview-menu">
+                  <li><a href="terrain.html"><i class="fa fa-angle-right"></i> Terrain</a></li>
+                  <li><a href="collectibles.html"><i class="fa fa-angle-right"></i> Collectibles</a></li>
+                </ul>
+              </li>
+            
+                <li class="treeview">
+                <a href="#">
+                <i class="fa fa-eye"></i> <span>View</span>
+                <i class="fa fa-angle-left pull-right"></i>
+                </a>
+                <ul class="treeview-menu">
+                   <li><a href="leadership.html"><i class="fa fa-angle-right"></i> Leadership Board</a></li>
+                    <li><a href="levels.html"><i class="fa fa-angle-right"></i> Levels</a></li>
+                  <li><a href="#"><i class="fa fa-angle-right"></i> Achievements</a></li>     
+                </ul>
+              </li>
+          </div> 
+          <!-- /.navbar-collapse -->
+      </nav>
+    </aside>
+    </div>
+        <!--left-fixed -navigation-->
+        
+            <!-- header-starts -->
+        <div class="sticky-header header-section ">
+            <div class="header-left">
+                <!--toggle button start-->
+                <button id="showLeftPush"><i class="fa fa-bars"></i></button>
+                <!--toggle button end-->
+                <div class="profile_details_left"><!--notifications of menu start -->
+                    <ul class="nofitications-dropdown">
+                        <li class="dropdown head-dpdn">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="fa fa-envelope"></i><span class=""></span></a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <div class="notification_header">
+                                        <h3>You have 3 new messages</h3>
+                                    </div>
+                                </li>
+                                <li><a href="#">
+                                   <div class="user_img"><img src="images/1.jpg" alt=""></div>
+                                   <div class="notification_desc">
+                                    <p>Player 1</p>
+                                    <p><span>1 hour ago</span></p>
+                                    </div>
+                                   <div class="clearfix"></div> 
+                                </a></li>
+                                <li class="odd"><a href="#">
+                                    <div class="user_img"><img src="images/4.jpg" alt=""></div>
+                                   <div class="notification_desc">
+                                    <p>Player 2</p>
+                                    <p><span>1 hour ago</span></p>
+                                    </div>
+                                  <div class="clearfix"></div>  
+                                </a></li>
+                                <li><a href="#">
+                                   <div class="user_img"><img src="images/3.jpg" alt=""></div>
+                                   <div class="notification_desc">
+                                    <p>Player 3 </p>
+                                    <p><span>1 hour ago</span></p>
+                                    </div>
+                                   <div class="clearfix"></div> 
+                                </a></li>
+                                <li><a href="#">
+                                   <div class="user_img"><img src="images/2.jpg" alt=""></div>
+                                   <div class="notification_desc">
+                                    <p>Player 4 </p>
+                                    <p><span>1 hour ago</span></p>
+                                    </div>
+                                   <div class="clearfix"></div> 
+                                </a></li>
+                                <li>
+                                    <div class="notification_bottom">
+                                        <a href="#">See all messages</a>
+                                    </div> 
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown head-dpdn">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="fa fa-bell"></i><span class=""></span></a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <div class="notification_header">
+                                        <h3>You have 3 new notification</h3>
+                                    </div>
+                                </li>
+                                <li><a href="#">
+                                    <div class="user_img"><img src="images/4.jpg" alt=""></div>
+                                   <div class="notification_desc">
+                                    <p>Player 1</p>
+                                    <p><span>1 hour ago</span></p>
+                                    </div>
+                                  <div class="clearfix"></div>  
+                                 </a></li>
+                                 <li class="odd"><a href="#">
+                                    <div class="user_img"><img src="images/1.jpg" alt=""></div>
+                                   <div class="notification_desc">
+                                    <p>Player 2 </p>
+                                    <p><span>1 hour ago</span></p>
+                                    </div>
+                                   <div class="clearfix"></div> 
+                                 </a></li>
+                                 <li><a href="#">
+                                    <div class="user_img"><img src="images/3.jpg" alt=""></div>
+                                   <div class="notification_desc">
+                                    <p>Player 3</p>
+                                    <p><span>1 hour ago</span></p>
+                                    </div>
+                                   <div class="clearfix"></div> 
+                                 </a></li>
+                                <li><a href="#">
+                                   <div class="user_img"><img src="images/2.jpg" alt=""></div>
+                                   <div class="notification_desc">
+                                    <p>Player 4</p>
+                                    <p><span>1 hour ago</span></p>
+                                    </div>
+                                   <div class="clearfix"></div> 
+                                </a></li>
+                                 <li>
+                                    <div class="notification_bottom">
+                                        <a href="#">See all notifications</a>
+                                    </div> 
+                                </li>
+                            </ul>
+                        </li>   
+                        </li>   
+                    </ul>
+                    <div class="clearfix"> </div>
+                </div>
+                <!--notification menu end -->
+                <div class="clearfix"> </div>
+            </div>
+                    <div class="header-right">
+                <div class="profile_details">       
+                    <ul>
+                        <li class="dropdown profile_details_drop">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                                <div class="profile_img">   
+                                    <span class="prfil-img"><img src="images/2.jpg" alt=""> </span> 
+                                    <div class="user-name">
+                                        <p>Admin Name</p>
+                                        <span>Administrator</span>
+                                    </div>
+                                    <i class="fa fa-angle-down lnr"></i>
+                                    <i class="fa fa-angle-up lnr"></i>
+                                    <div class="clearfix"></div>    
+                                </div>  
+                            </a>
+                            <ul class="dropdown-menu drp-mnu">
+                                <li> <a href="#"><i class="fa fa-suitcase"></i> Profile</a> </li> 
+                                <li> <a href="#"><i class="fa fa-sign-out"></i> Logout</a> </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="clearfix"> </div>               
+            </div>
+            <div class="clearfix"> </div>   
+        </div>
+        <!-- //header-ends -->
+        <!-- main content start-->
+           
+                    
+           
+     <div id="page-wrapper">
+        <div class="col-sm-8"><h2> <b>Terrain</b></h2></div>  
+            <div class="main-page">
+                 <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Tourist Spots</th>
+                        <th>Details</th>
+                        <th>Path</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                      
+                        <td>
+                            <a class="add" title="Add" data-toggle="tooltip"><i class="material-icons">&#xE03B;</i></a>
+                            <a class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
+                            <a class="delete" title="Delete" data-toggle="tooltip"><i class="material-icons">&#xE872;</i></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                       
+                        <td>
+                            <a class="add" title="Add" data-toggle="tooltip"><i class="material-icons">&#xE03B;</i></a>
+                            <a class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
+                            <a class="delete" title="Delete" data-toggle="tooltip"><i class="material-icons">&#xE872;</i></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                       
+                        <td>
+                            <a class="add" title="Add" data-toggle="tooltip"><i class="material-icons">&#xE03B;</i></a>
+                            <a class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
+                            <a class="delete" title="Delete" data-toggle="tooltip"><i class="material-icons">&#xE872;</i></a>
+                        </td>
+                    </tr>   
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div> 
+<style>
+body {
+    color: #404E67;
+    background: #F5F7FA;
+    font-family: 'Open Sans', sans-serif;
+}
+.table-wrapper {
+    width: 700px;
+    margin: 30px auto;
+    background: #fff;
+    padding: 20px;  
+    box-shadow: 0 1px 1px rgba(0,0,0,.05);
+}
+.table-title {
+    padding-bottom: 10px;
+    margin: 0 0 10px;
+}
+.table-title h2 {
+    margin: 6px 0 0;
+    font-size: 22px;
+}
+.table-title .add-new {
+    float: right;
+    height: 30px;
+    font-weight: bold;
+    font-size: 12px;
+    text-shadow: none;
+    min-width: 100px;
+    border-radius: 50px;
+    line-height: 13px;
+}
+.table-title .add-new i {
+    margin-right: 4px;
+}
+table.table {
+    table-layout: fixed;
+}
+table.table tr th, table.table tr td {
+    border-color: #e9e9e9;
+}
+table.table th i {
+    font-size: 13px;
+    margin: 0 5px;
+    cursor: pointer;
+}
+table.table th:last-child {
+    width: 100px;
+}
+table.table td a {
+    cursor: pointer;
+    display: inline-block;
+    margin: 0 5px;
+    min-width: 24px;
+}    
+table.table td a.add {
+    color: #27C46B;
+}
+table.table td a.edit {
+    color: #FFC107;
+}
+table.table td a.delete {
+    color: #E34724;
+}
+table.table td i {
+    font-size: 19px;
+}
+table.table td a.add i {
+    font-size: 24px;
+    margin-right: -1px;
+    position: relative;
+    top: 3px;
+}    
+table.table .form-control {
+    height: 32px;
+    line-height: 32px;
+    box-shadow: none;
+    border-radius: 2px;
+}
+table.table .form-control.error {
+    border-color: #f50000;
+}
+table.table td .add {
+    display: none;
+}
+</style>
+<script>
+$(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip();
+    var actions = $("table td:last-child").html();
+    // Append table with add row form on add new button click
+    $(".add-new").click(function(){
+        $(this).attr("disabled", "disabled");
+        var index = $("table tbody tr:last-child").index();
+        var row = '<tr>' +
+            '<td><input type="text" class="form-control" name="name" id="name"></td>' +
+            '<td><input type="text" class="form-control" name="department" id="department"></td>' +
+            '<td><input type="text" class="form-control" name="phone" id="phone"></td>' +
+            '<td>' + actions + '</td>' +
+        '</tr>';
+        $("table").append(row);     
+        $("table tbody tr").eq(index + 1).find(".add, .edit").toggle();
+        $('[data-toggle="tooltip"]').tooltip();
+    });
+    // Add row on add button click
+    $(document).on("click", ".add", function(){
+        var empty = false;
+        var input = $(this).parents("tr").find('input[type="text"]');
+        input.each(function(){
+            if(!$(this).val()){
+                $(this).addClass("error");
+                empty = true;
+            } else{
+                $(this).removeClass("error");
+            }
+        });
+        $(this).parents("tr").find(".error").first().focus();
+        if(!empty){
+            input.each(function(){
+                $(this).parent("td").html($(this).val());
+            });         
+            $(this).parents("tr").find(".add, .edit").toggle();
+            $(".add-new").removeAttr("disabled");
+        }       
+    });
+    // Edit row on edit button click
+    $(document).on("click", ".edit", function(){        
+        $(this).parents("tr").find("td:not(:last-child)").each(function(){
+            $(this).html('<input type="text" class="form-control" value="' + $(this).text() + '">');
+        });     
+        $(this).parents("tr").find(".add, .edit").toggle();
+        $(".add-new").attr("disabled", "disabled");
+    });
+    // Delete row on delete button click
+    $(document).on("click", ".delete", function(){
+        $(this).parents("tr").remove();
+        $(".add-new").removeAttr("disabled");
+    });
+});
+</script>    
+    <!-- side nav js -->
+    <script src='js/SidebarNav.min.js' type='text/javascript'></script>
+    <script>
+      $('.sidebar-menu').SidebarNav()
+    </script>
+    <!-- //side nav js -->
+    
+    <!-- Classie --><!-- for toggle left push menu script -->
+        <script src="js/classie.js"></script>
+        <script>
+            var menuLeft = document.getElementById( 'cbp-spmenu-s1' ),
+                showLeftPush = document.getElementById( 'showLeftPush' ),
+                body = document.body;
+                
+            showLeftPush.onclick = function() {
+                classie.toggle( this, 'active' );
+                classie.toggle( body, 'cbp-spmenu-push-toright' );
+                classie.toggle( menuLeft, 'cbp-spmenu-open' );
+                disableOther( 'showLeftPush' );
+            };
+            
+            function disableOther( button ) {
+                if( button !== 'showLeftPush' ) {
+                    classie.toggle( showLeftPush, 'disabled' );
+                }
+            }
+        </script>
+    <!-- //Classie --><!-- //for toggle left push menu script -->
+    
+    <!--scrolling js-->
+    <script src="js/jquery.nicescroll.js"></script>
+    <script src="js/scripts.js"></script>
+    <!--//scrolling js-->
+    
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.js"> </script>
+    
+</body>
+</html>
